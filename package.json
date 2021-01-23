@@ -1,0 +1,31 @@
+{
+  "name": "testLayer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@wdio/cli": "^6.12.1"
+  },
+  "devDependencies": {
+    "@wdio/local-runner": "^6.12.1",
+    "@wdio/mocha-framework": "^6.11.0",
+    "@wdio/spec-reporter": "^6.11.0",
+    "@wdio/sync": "^6.11.0",
+    "chromedriver": "^87.0.7",
+    "wdio-chromedriver-service": "^6.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bernatsimus/testLayer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bernatsimus/testLayer/issues"
+  },
+  "homepage": "https://github.com/bernatsimus/testLayer#readme"
+}
