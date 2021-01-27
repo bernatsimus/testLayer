@@ -11,6 +11,7 @@ describe('Planet resident path', () => {
     it('should access to the alderaan resident cards', () => {
 
         $(homeSelectors.nabooResidentsButton).click();
+        $(residentsSelectors.palpatineLikeButton).waitForDisplayed({ timeout: 15000 });
 
         expect($(homeSelectors.residentsModal)).toBeDisplayed()
     });
@@ -24,7 +25,8 @@ describe('Planet resident path', () => {
         expect($(residentsSelectors.palpatineLikeButton)).toHaveElementClass('activeHeart');
     });
 
-    it('should close the resident modal', () => {
+    it('should close the naboo resident modal', () => {
+
         $(homeSelectors.residentsModalCloseButton).click();
 
         expect($(homeSelectors.residentsModal)).not.toBeDisplayed()
@@ -33,7 +35,8 @@ describe('Planet resident path', () => {
     it('should confirm the residents like buttons are marked', () => {
 
         $(homeSelectors.nabooResidentsButton).click();
-
+        $(residentsSelectors.palpatineLikeButton).waitForDisplayed({ timeout: 15000 });
+        
         expect($(residentsSelectors.rtwodtwoLikeButton)).toHaveElementClass('activeHeart');
         expect($(residentsSelectors.palpatineLikeButton)).toHaveElementClass('activeHeart');
     });
